@@ -13,6 +13,8 @@ In order to keep the benefits of Pygame and the ability to draw whatever on scre
 This new element is actually a `Surface` from Pygame, and comes with a callback for each screen update.
 This element should have more functionalities in the future, such as getting the mouse position on the surface.
 
+This library uses XML files to generate a layout using UI components.
+
 ## Installation
 ```bash
 pip install pygame-layout
