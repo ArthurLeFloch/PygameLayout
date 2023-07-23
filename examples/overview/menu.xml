@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout color="#101418">
+
+	<Layout id="header"
+		color="#aa0000"
+		border_radius="8"
+		border_radius_top_left="32"
+		border_radius_bottom_left="32"
+		margin="16"
+		width="0"
+		height="60">
+
+		<Text id="fps"
+			text="FPS: 0"
+			text_color="#ffffff"
+			gravity="center"
+			width="100"
+			height="0"
+			margin="16"
+			top_to_top_of="parent"
+			start_to_start_of="parent" />
+
+		<Button id="exit"
+			text="Close window"
+			width="200"
+			height="0"
+			margin="4"
+			end_to_end_of="parent" />
+
+		<Text id="title"
+			text="Menu layout"
+			text_color="#ffffff"
+			gravity="center"
+			width="0"
+			height="0"
+			start_to_end_of="fps"
+			end_to_start_of="exit" />
+
+	</Layout>
+
+	<Button id="text_container"
+		text="Open Text / Button / Container layout"
+		margin="16"
+		width="0"
+		height="60"
+		top_to_bottom_of="header" />
+
+	<Button id="second_button"
+		text="Second button"
+		margin="16"
+		width="0"
+		height="60"
+		top_to_bottom_of="text_container" />
+
+	<Button id="percentage"
+		text="Open percentage layout"
+		margin="16"
+		width="0"
+		height="60"
+		top_to_bottom_of="text_container" />
+	
+	<Button id="ui_components"
+		text="Open UI components layout"
+		margin="16"
+		width="0"
+		height="60"
+		top_to_bottom_of="second_button" />
+
+</Layout>

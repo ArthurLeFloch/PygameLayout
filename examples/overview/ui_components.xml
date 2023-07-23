@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout color="#101418">
+
+	<Layout id="header"
+		color="#aa0000"
+		border_radius="8"
+		border_radius_top_left="32"
+		border_radius_bottom_left="32"
+		margin="16"
+		width="0"
+		height="60">
+
+		<Text id="fps"
+			text="FPS: 0"
+			text_color="#ffffff"
+			gravity="center"
+			width="100"
+			height="0"
+			margin="16"
+			top_to_top_of="parent"
+			start_to_start_of="parent" />
+
+		<Button id="close"
+			text="Close layout"
+			width="200"
+			height="0"
+			margin="4"
+			end_to_end_of="parent" />
+
+		<Text id="title"
+			text="UI components"
+			text_color="#ffffff"
+			gravity="center"
+			width="0"
+			height="0"
+			start_to_end_of="fps"
+			end_to_start_of="close" />
+
+	</Layout>
+
+	<Layout id="ui_components_container"
+		color="#304050"
+		border_radius="8"
+		margin="16"
+		width="0"
+		height="0"
+		top_to_bottom_of="header">
+
+		<Layout id="button_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="33%"
+			height="50%"
+			start_to_start_of="parent"
+			top_to_top_of="parent">
+
+			<Text id="button_title"
+				gravity="center"
+				text="Buttons"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				top_to_top_of="parent" />
+
+			<Button id="button_classic"
+				text="Classic button"
+				width="0"
+				height="50"
+				margin="8"
+				top_to_bottom_of="button_title"
+				start_to_start_of="parent"
+				end_to_end_of="parent" />
+
+			<Button id="button_not_hoverable"
+				text="Not hoverable"
+				width="0"
+				height="50"
+				margin="8"
+				top_to_bottom_of="button_classic"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				hoverable="false" />
+
+			<Button id="button_locked"
+				text="Locked button"
+				width="0"
+				height="50"
+				margin="8"
+				top_to_bottom_of="button_not_hoverable"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				locked="true" />
+		</Layout>
+
+		<Layout id="image_button_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="34%"
+			height="50%"
+			start_to_end_of="button_container"
+			top_to_top_of="parent">
+
+			<Text id="image_button_title"
+				gravity="center"
+				text="Image buttons"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				top_to_top_of="parent" />
+
+			<ImageButton id="image_button_vertical"
+				src="../data/hut.png"
+				width="50"
+				height="0"
+				margin="8"
+				top_to_bottom_of="image_button_title"
+				start_to_start_of="parent" />
+
+			<ImageButton id="image_button_classic"
+				src="../data/hut.png"
+				width="0"
+				height="50"
+				margin="8"
+				top_to_bottom_of="image_button_title"
+				start_to_end_of="image_button_vertical" />
+
+			<ImageButton id="image_button_not_hoverable"
+				src="../data/hut.png"
+				width="0"
+				height="50"
+				margin="8"
+				hoverable="false"
+				top_to_bottom_of="image_button_classic"
+				start_to_end_of="image_button_vertical" />
+
+			<ImageButton id="image_button_locked"
+				src="../data/hut.png"
+				width="0"
+				height="50"
+				margin="8"
+				top_to_bottom_of="image_button_not_hoverable"
+				start_to_end_of="image_button_vertical"
+				locked="true" />
+
+			<ImageButton id="image_button_large"
+				src="../data/hut.png"
+				width="0"
+				height="0"
+				margin="8"
+				top_to_bottom_of="image_button_locked"
+				start_to_end_of="image_button_vertical" />
+		</Layout>
+
+		<Layout id="slider_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="33%"
+			height="50%"
+			start_to_end_of="image_button_container"
+			top_to_top_of="parent">
+
+			<Text id="slider_title"
+				gravity="center"
+				text="Slider"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				top_to_top_of="parent" />
+
+			<Slider id="classic_slider"
+				width="0"
+				height="30"
+				margin="8"
+				top_to_bottom_of="slider_title" />
+
+			<Slider id="slider_with_ticks"
+				width="0"
+				height="30"
+				margin="8"
+				top_to_bottom_of="classic_slider"
+				ticks="10" />
+
+			<Slider id="slider_locked"
+				width="0"
+				height="30"
+				margin="8"
+				top_to_bottom_of="slider_with_ticks"
+				locked="true" />
+
+			<Slider id="slider_not_hoverable"
+				width="0"
+				height="30"
+				margin="8"
+				top_to_bottom_of="slider_locked"
+				hoverable="false" />
+
+		</Layout>
+
+		<Layout id="checkbox_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="33%"
+			height="50%"
+			top_to_bottom_of="button_container"
+			start_to_start_of="parent"
+			bottom_to_bottom_of="parent">
+
+			<Text id="checkbox_title"
+				gravity="center"
+				text="Checkbox"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				top_to_top_of="parent" />
+
+			<CheckBox id="checkbox_classic"
+				width="30"
+				height="30"
+				margin="8"
+				start_to_start_of="parent"
+				top_to_bottom_of="checkbox_title" />
+
+			<CheckBox id="checkbox_checked"
+				width="30"
+				height="30"
+				margin="8"
+				start_to_start_of="parent"
+				top_to_bottom_of="checkbox_classic"
+				checked="true" />
+
+			<CheckBox id="checkbox_locked"
+				width="30"
+				height="30"
+				margin="8"
+				start_to_start_of="parent"
+				top_to_bottom_of="checkbox_checked"
+				locked="true" />
+
+			<CheckBox id="checkbox_not_hoverable"
+				width="30"
+				height="30"
+				margin="8"
+				start_to_start_of="parent"
+				top_to_bottom_of="checkbox_locked"
+				hoverable="false" />
+
+		</Layout>
+
+		<Layout id="linked_checkbox_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="34%"
+			height="50%"
+			start_to_end_of="checkbox_container"
+			top_to_bottom_of="image_button_container">
+
+			<Text id="linked_checkbox_title"
+				gravity="center"
+				text="Linked checkbox"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				top_to_top_of="parent" />
+
+			<CheckBox id="checkbox_linked_1"
+				width="30"
+				height="30"
+				margin="8"
+				end_to_end_of="parent"
+				top_to_bottom_of="linked_checkbox_title"
+				link="checkbox_linked_1,checkbox_linked_2,checkbox_linked_3" />
+
+			<CheckBox id="checkbox_linked_2"
+				width="30"
+				height="30"
+				margin="8"
+				end_to_end_of="parent"
+				top_to_bottom_of="checkbox_linked_1"
+				link="checkbox_linked_1,checkbox_linked_2,checkbox_linked_3" />
+
+			<CheckBox id="checkbox_linked_3"
+				width="30"
+				height="30"
+				margin="8"
+				end_to_end_of="parent"
+				top_to_bottom_of="checkbox_linked_2"
+				link="checkbox_linked_1,checkbox_linked_2,checkbox_linked_3" />
+		</Layout>
+
+		<Layout id="view_container"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="33%"
+			height="50%"
+			end_to_end_of="parent"
+			bottom_to_bottom_of="parent">
+
+			<Text id="view_title"
+				gravity="center"
+				text="View"
+				text_color="#ffffff"
+				width="0"
+				height="40"
+				start_to_start_of="parent"
+				end_to_end_of="parent"
+				top_to_top_of="parent" />
+
+			<View id="view"
+				color="#ffffff"
+				width="0"
+				height="0"
+				margin="8"
+				top_to_bottom_of="view_title"
+				start_to_start_of="parent"
+				end_to_end_of="parent" />
+
+		</Layout>
+
+	</Layout>
+
+</Layout>

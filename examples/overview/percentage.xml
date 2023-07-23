@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout color="#101418">
+
+	<Layout id="header"
+		color="#aa0000"
+		border_radius="8"
+		border_radius_top_left="32"
+		border_radius_bottom_left="32"
+		margin="16"
+		width="0"
+		height="60">
+
+		<Text id="fps"
+			text="FPS: 0"
+			text_color="#ffffff"
+			gravity="center"
+			width="100"
+			height="0"
+			margin="16"
+			top_to_top_of="parent"
+			start_to_start_of="parent" />
+
+		<Button id="close"
+			text="Close layout"
+			width="200"
+			height="0"
+			margin="4"
+			end_to_end_of="parent" />
+
+		<Text id="title"
+			text="Percentage layout"
+			text_color="#ffffff"
+			gravity="center"
+			width="0"
+			height="0"
+			start_to_end_of="fps"
+			end_to_start_of="close" />
+
+	</Layout>
+
+	<Layout id="percentage_container"
+		color="#304050"
+		border_radius="8"
+		margin="16"
+		width="0"
+		height="0"
+		top_to_bottom_of="header">
+
+		<Layout id="30_percent"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="30%"
+			height="50%"
+			start_to_start_of="parent"
+			top_to_top_of="parent">
+
+			<Text id="30_width"
+				gravity="center"
+				text="Width: 30%"
+				width="0"
+				height="40"
+				top_to_top_of="parent" />
+
+			<Text id="30_height"
+				gravity="center"
+				text="Height: 50%"
+				width="0"
+				height="40"
+				top_to_bottom_of="30_width" />
+		</Layout>
+
+		<Layout id="50_percent"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="50%"
+			height="100%"
+			start_to_end_of="30_percent"
+			top_to_top_of="parent">
+
+			<Text id="50_width"
+				gravity="center"
+				text="Width: 50%"
+				width="0"
+				height="40"
+				top_to_top_of="parent" />
+
+			<Text id="50_height"
+				gravity="center"
+				text="Height: 100%"
+				width="0"
+				height="40"
+				top_to_bottom_of="50_width" />
+		</Layout>
+
+		<Layout id="20_percent"
+			color="#40506f"
+			border_radius="8"
+			margin="8"
+			width="20%"
+			height="40%"
+			start_to_end_of="50_percent"
+			bottom_to_bottom_of="parent">
+
+			<Text id="20_width"
+				gravity="center"
+				text="Width: 20%"
+				width="0"
+				height="40"
+				top_to_top_of="parent" />
+
+			<Text id="20_height"
+				gravity="center"
+				text="Height: 40%"
+				width="0"
+				height="40"
+				top_to_bottom_of="20_width" />
+		</Layout>
+	</Layout>
+
+
+</Layout>

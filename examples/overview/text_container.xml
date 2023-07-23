@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout color="#101418">
+
+	<Layout id="header"
+		color="#aa0000"
+		border_radius="8"
+		border_radius_top_left="32"
+		border_radius_bottom_left="32"
+		margin="16"
+		width="0"
+		height="60">
+
+		<Text id="fps"
+			text="FPS: 0"
+			text_color="#ffffff"
+			gravity="center"
+			width="100"
+			height="0"
+			margin="16"
+			top_to_top_of="parent"
+			start_to_start_of="parent" />
+
+		<Button id="close"
+			text="Close layout"
+			width="200"
+			height="0"
+			margin="4"
+			end_to_end_of="parent" />
+
+		<Text id="title"
+			text="Text / Container layout"
+			text_color="#ffffff"
+			gravity="center"
+			width="0"
+			height="0"
+			start_to_end_of="fps"
+			end_to_start_of="close" />
+
+	</Layout>
+
+	<Layout id="footer"
+		color="#304050"
+		border_radius="8"
+		width="0"
+		height="60"
+		margin="16"
+		bottom_to_bottom_of="parent">
+
+		<Text id="footer_text"
+			text="Footer"
+			text_color="#ffffff"
+			gravity="left_center"
+			width="0"
+			height="0"
+			margin="8" />
+	</Layout>
+
+
+	<Layout id="left_layout"
+		color="#00aa00"
+		border_radius="8"
+		width="120"
+		height="0"
+		margin_left="16"
+		margin_top="16"
+		top_to_bottom_of="header"
+		start_to_start_of="parent"
+		bottom_to_top_of="footer">
+
+		<Text id="first_text_left"
+			text="00"
+			text_color="#000000"
+			color="#bbbbbb"
+			gravity="bottom_center"
+			width="0"
+			height="30"
+			margin="8"
+			top_to_top_of="parent" />
+
+		<Text id="second_text_left"
+			text="11"
+			text_color="#000000"
+			color="#bbbbbb"
+			gravity="bottom_right"
+			width="0"
+			height="80"
+			margin="8"
+			top_to_bottom_of="first_text_left" />
+
+	</Layout>
+
+	<Layout id="right_layout"
+		color="#0000cc"
+		border_radius="8"
+		width="0"
+		height="0"
+		margin="16"
+		margin_bottom="0"
+		top_to_bottom_of="header"
+		start_to_end_of="left_layout"
+		end_to_end_of="parent"
+		bottom_to_top_of="footer">
+
+		<Text id="first_text"
+			text="ee"
+			text_color="#000000"
+			color="#aaaaaa"
+			width="0"
+			height="25"
+			margin="8"
+			top_to_top_of="parent" />
+
+		<Text id="second_text"
+			text="ff"
+			text_color="#000000"
+			color="#ffffff"
+			gravity="right_center"
+			width="140"
+			height="0"
+			margin="8"
+			top_to_bottom_of="first_text"
+			bottom_to_bottom_of="parent"
+			end_to_end_of="parent" />
+
+		<Text id="third_text"
+			text="gg"
+			text_color="#000000"
+			color="#666666"
+			gravity="center"
+			width="0"
+			height="0"
+			margin="8"
+			top_to_bottom_of="first_text"
+			bottom_to_bottom_of="parent"
+			start_to_start_of="parent"
+			end_to_start_of="second_text" />
+
+	</Layout>
+
+</Layout>
