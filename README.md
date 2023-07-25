@@ -23,7 +23,7 @@ pip install pygame-layout
 ## Examples
 At the moment, the available examples are:
 - [Overview](examples/overview/overview.py)
-- [Password Generator](example/password_generator/password_generator.py)
+- [Password Generator](examples/password_generator/password_generator.py)
 
 In order to run an example, you must be in the same folder as the Python file.
 
